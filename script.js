@@ -59,7 +59,7 @@ function generateReceipt() {
     receiptText += `Итого: ${total.toFixed(2)} руб.\n`;
 
     // Отправляем чек на сервер для сохранения
-    fetch('/save-receipt', {
+    /*fetch('/save-receipt', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ function generateReceipt() {
     })
     .catch(error => {
         console.error('Ошибка:', error);
-    });
+    });*/
 
     // Отображаем чек
     document.getElementById('receipt').style.display = 'block';
