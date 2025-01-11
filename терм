@@ -1,0 +1,45 @@
+PS D:\No_open> mkdir receipt-app     
+>> cd receipt-app
+>> npm init -y
+>> npm install express body-parser fs
+mkdir : Элемент с указанным именем D:\No_open\receipt-app уже существует.
+строка:1 знак:1
++ mkdir receipt-app
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (D:\No_open\receipt-app:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+ 
+Wrote to D:\No_open\receipt-app\package.json:
+
+{
+  "name": "receipt-app",
+  "version": "1.0.0",
+  "description": "Приложение для генерации и сохранения товарных чеков",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  },
+  "author": "",
+  "license": "ISC",
+}
+
+
+
+
+added 70 packages, and audited 71 packages in 6s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS D:\No_open\receipt-app> node server.js
+Сервер запущен на http://localhost:3000
+
+ *  Журнал восстановлен 
+
+PS D:\No_open> 
